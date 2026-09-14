@@ -1,0 +1,8 @@
+# Copy this file to terraform.tfvars and fill in your own values.
+# terraform.tfvars is gitignored so you never accidentally commit personal/account details.
+
+aws_region   = "us-east-1"
+project_name = "tf-vpc-webserver"
+
+key_name = "your-existing-ec2-keypair-name"
+my_ip    = "203.0.113.5/32" # get yours at https://checkip.amazonaws.com
