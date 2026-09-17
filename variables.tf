@@ -49,3 +49,9 @@ variable "my_ip" {
   description = "Your public IP in CIDR form (e.g. 203.0.113.5/32), used to restrict SSH access. Find yours at https://checkip.amazonaws.com"
   type        = string
 }
+
+variable "alert_email" {
+  description = "Email to notify on high CPU or status check failures. Leave empty to skip email alerts."
+  type        = string
+  default     = ""
+}
